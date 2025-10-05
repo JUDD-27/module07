@@ -1,105 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luigi's Restaurant</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/Css/styles.css" />
+  <title>Luigi's Italian Restaurant</title>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <figure>
-                <img>
-            </figure>
+
+  <header role="banner">
+    <div class="logo">
+      <figure>
+        <img src="images/Luigi'sLogo.png" alt="Luigi’s Italian Restaurant logo" />
+      </figure>
+    </div>
+
+    <nav aria-label="Primary">
+      <ul>
+        <!-- Link to in-page anchors, not # -->
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#reservation">Reservation</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="sub-header" role="region" aria-label="Welcome">
+      <img class="hero" src="/images/luigisKitchen.jpg"
+      <h1>Luigi’s Italian Restaurant</h1>
+      <h2>Since 1998, Cooking with Tradition</h2>
+      <p>Hand-rolled pasta, family recipes, and the simple joy of gathering together.</p>
+      <!-- Use a link styled as a button for better semantics -->
+      <a class="btn" href="#reservation">Dine with Us</a>
+    </div>
+  </header>
+
+  <main id="main" role="main">
+    <div id="container">
+      <!-- ABOUT -->
+      <section id="about" class="about" aria-labelledby="about-title">
+        <figure>
+          <img src="images/chef.jpg" alt="Chef Luigi sprinkling Parmigiano over fresh pasta." />
+        </figure>
+        <h2 id="about-title">Our Story</h2>
+        <p>For over 25 years, Luigi’s has been more than just a restaurant — it’s been a family table. Every recipe is inspired by the flavors of southern Italy, carried across generations, and served with pride. From the first loaf of warm bread to the last bite of tiramisu, we welcome you as neighbors and send you off as friends.</p>
+      </section>
+
+      <!-- GALLERY -->
+      <section id="gallery" aria-labelledby="gallery-title">
+        <h2 id="gallery-title">From the Kitchen</h2>
+        <div class="gallery">
+          <figure>
+            <img src="images/dish-1.jpg" alt="Truffle tagliatelle with shaved truffles on top." loading="lazy" />
+            <figcaption>Truffle Tagliatelle</figcaption>
+          </figure>
+
+          <figure>
+            <img src="images/dish-2.jpg" alt="Wood-fired Margherita pizza with fresh basil." loading="lazy" />
+            <figcaption>Margherita Pizza</figcaption>
+          </figure>
+
+          <figure>
+            <img src="images/dessert.jpg" alt="Classic Italian tiramisu with cocoa dusting." loading="lazy" />
+            <figcaption>Tiramisu</figcaption>
+          </figure>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="sub-header">
-            <h1>Luigi’s Italian Restaurant</h1>
-            <h2> Since 1998, Cooking with Tradition</h2>
-            <p>Hand-rolled pasta, family recipes, and the simple joy of gathering together.</p>
-            <button class="sub-Hbotton"><a href="">Dine with Us</a></button>
+      </section>
+
+      <!-- MENU PREVIEW (keep short for single-page) -->
+      <section id="menu" class="menu" aria-labelledby="menu-title">
+        <h2 id="menu-title">Menu</h2>
+
+        <div class="menu-group">
+          <h3>Pasta & Mains</h3>
+          <ul class="menu-list">
+            <li>
+              <span class="item">Tagliatelle Bolognese</span>
+              <span class="price" aria-label="Price $19">$19</span>
+            </li>
+            <li>
+              <span class="item">Penne alla Vodka (V)</span>
+              <span class="price" aria-label="Price $17">$17</span>
+            </li>
+            <li>
+              <span class="item">Chicken Parmigiana</span>
+              <span class="price" aria-label="Price $20">$20</span>
+            </li>
+            <li>
+              <span class="item">Eggplant Parmigiana (V)</span>
+              <span class="price" aria-label="Price $18">$18</span>
+            </li>
+          </ul>
+          <a class="btn ghost" href="#reservation">Full Menu in House</a>
         </div>
-    </header>
 
-    <main>
-        <div id="container" >
-            <section class="about">
-                <img>
-                <h2>Our Story</h2>
-                <p>For over 25 years, Luigi’s has been more than just a restaurant — it’s been a family table. Every recipe is inspired by the flavors of southern Italy, carried across generations, and served with pride. From the first loaf of warm bread to the last bite of tiramisu, we welcome you as neighbors and send you off as friends.</p>
-            </section>
+        <aside id="pizza" aria-labelledby="pizza-title">
+          <h3 id="pizza-title">Pizza Favorites</h3>
+          <!-- NOTE: src, not csr; avoid <aside> inside <p> -->
+          <ul class="menu-list">
+            <li>
+              <span class="item">Margherita (V)</span>
+              <span class="price" aria-label="Price $14">$14</span>
+            </li>
+            <li>
+              <span class="item">Pepperoni</span>
+              <span class="price" aria-label="Price $15">$15</span>
+            </li>
+            <li>
+              <span class="item">Four-Cheese (V)</span>
+              <span class="price" aria-label="Price $16">$16</span>
+            </li>
+            <li>
+              <span class="item">Luigi’s Special</span>
+              <span class="price" aria-label="Price $18">$18</span>
+            </li>
+          </ul>
 
-            <section id="gallery">
-                <h2>From the Kitchen</h2>
-                <div class="gallery">
-                    <figure>
-                    <img src="" alt="Truffle tagliatelle with shaved truffles on top." loading="lazy">
-                    <figcaption>Truffle Tagliatelle</figcaption>
-                    </figure>
+          <div class="today">
+            <h4>Today’s Choice</h4>
+            <p>Chicken Parm Pie</p>
+          </div>
+        </aside>
+      </section>
 
-                    <figure>
-                    <img src="" alt="Wood-fired Margherita pizza with fresh basil." loading="lazy">
-                    <figcaption>Margherita Pizza</figcaption>
-                    </figure>
+      <!-- RESERVATION (your new section with warm one-liner) -->
+      <section id="reservation" class="reservation" aria-labelledby="reservation-title">
+        <h2 id="reservation-title">Reserve Your Table</h2>
+        <p>Celebrate life’s special moments with us — book your table today and let Luigi’s be part of your story.</p>
+        <!-- You can link to a form page or mailto/phone -->
+        <a class="btn" href="mailto:hello@luigis.example?subject=Reservation">Make a Reservation</a>
+      </section>
 
-                    <figure>
-                    <img src="" alt="Classic Italian tiramisu with cocoa dusting." loading="lazy">
-                    <figcaption>Tiramisu</figcaption>
-                    </figure>
-                </div>
-            </section>
-
-            <section class="Memu">
-                <h2>Menu</h2>
-                <span></span>
-                <p>Tagliatelle Bolognese <span>$19</span></p>
-                <p>Penne alla Vodka (V)<span>$17</span></p>
-                <p>Chicken Parmigiana <span>$20</span></p>
-                <p>Eggplant Parmigiana (V)<span>$18</span></p>
-                <button><a href="#">Full Menu</a></button>
-            </section>
-            
-            <aside id="pizza">
-                <img csr="">
-                <h2>Pizza Menu</h2>
-                <p>Margherita (V)<span> $14</span></p>
-                <p> Pepperoni <aside>$15</aside></p>
-                <p>Four-Cheese (V)<aside>$16</aside></p>
-                <p>Luigi’s Special<aside>$18</aside></p>
-                <div class="Today">
-                    <h3>Today Choice:</h3>
-                    <p>Chicken Parm Pie</p>
-                </div>
-            </aside>
-
-            <section class="contact">
-                <h3>Visit Luigi’s</h3>
-                <div class="street">
-                <p>>123 Pasta Lane, Raleigh, NC 27601</p>
-                </div>
-                <div class="conatact">
-                    <p>Call Us: (919) 555-1234</p>
-                    <p>Email: hello@luigis.example</p>
-                </div>
-                <div class="hours">
-                    <h4>Hours:</h4>
-                    <p>Tue–Sun: 11:30 AM – 9:30 PM</p>
-                    <p class="open-hours">Closed Mondays</p>
-                </div>
-
-            </section>
+      <!-- CONTACT (near bottom) -->
+      <section id="contact" class="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">Visit Luigi’s</h2>
+        <address>
+          123 Pasta Lane, Raleigh, NC 27601<br />
+          <a href="tel:+19195551234">Call Us: (919) 555-1234</a><br />
+          <a href="mailto:hello@luigis.example">Email: hello@luigis.example</a>
+        </address>
+        <div class="hours">
+          <h3>Hours</h3>
+          <p>Tue–Sun: 11:30 AM – 9:30 PM</p>
+          <p class="closed">Closed Mondays</p>
         </div>
-    </main>
-    <footer>
-        <img id="Story">
-        <h3></h3>
-        <p></p>
-    </footer>
+      </section>
+    </div>
+  </main>
+
+  <footer role="contentinfo">
+    <!-- Optional owner image; if decorative, alt="" -->
+    <img src="images/owner.jpg" alt="Chef Luigi smiling in the dining room." />
+    <h3>Luigi Marcinno</h3>
+    <p>“Since 1998, Luigi’s has been sharing the flavors of Italy with Raleigh — thank you for letting our family’s table become part of yours. Buon Appetito!”</p>
+
+    <p class="credits">
+      Image credits: All food photos from StoryboardThat Photos (Creative Commons). Chef image by [Photographer’s Name], used under CC license.
+    </p>
+
+    <p class="copyright">© 2025 Luigi’s Italian Restaurant. All rights reserved.</p>
+  </footer>
 </body>
 </html>
