@@ -12,15 +12,19 @@
 <body>
 
   <header role="banner">
-    <div class="logo">
-      <figure>
-        <img src="images/Luigi'sLogo.png" alt="Luigi’s Italian Restaurant logo" />
-      </figure>
-    </div>
 
-    <nav aria-label="Primary">
-      <ul>
-        <!-- Link to in-page anchors, not # -->
+       <div class="logo">
+        <figure>
+          <img src="images/Luigi'sLogo.png" alt="Luigi’s Italian Restaurant logo" />
+        </figure>
+      </div>
+      <!-- Hamburger icon -->
+    <input class="side-menu" type="checkbox" id="side-menu"/>
+    <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+    <!-- Navigation -->
+    <nav  aria-label="Primary">
+      <!-- Link to in-page anchors -->
+      <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#gallery">Gallery</a></li>
         <li><a href="#menu">Menu</a></li>
@@ -28,26 +32,32 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-
-    <div class="sub-header" role="region" aria-label="Welcome">
-      <img class="hero" src="/images/luigisKitchen.jpg"
-      <h1>Luigi’s Italian Restaurant</h1>
-      <h2>Since 1998, Cooking with Tradition</h2>
-      <p>Hand-rolled pasta, family recipes, and the simple joy of gathering together.</p>
-      <!-- Use a link styled as a button for better semantics -->
-      <a class="btn" href="#reservation">Dine with Us</a>
-    </div>
+ 
+   
   </header>
 
   <main id="main" role="main">
+
+      <div class="sub-header" role="region" aria-label="Welcome">
+        <img class="hero" src="/images/luigisKitchen.jpg">
+        <h1>Luigi’s Italian Restaurant</h1>
+        <h2>Since 1998, Cooking with Tradition</h2>
+        <p>Hand-rolled pasta, family recipes, and the simple joy of gathering together.</p>
+        <!-- Use a link styled as a button for better semantics -->
+        <a class="btn" href="#reservation">Dine with Us</a>
+      </div>
+
     <div id="container">
+     
       <!-- ABOUT -->
       <section id="about" class="about" aria-labelledby="about-title">
-        <figure>
-          <img src="images/chef.jpg" alt="Chef Luigi sprinkling Parmigiano over fresh pasta." />
-        </figure>
+        
         <h2 id="about-title">Our Story</h2>
         <p>For over 25 years, Luigi’s has been more than just a restaurant — it’s been a family table. Every recipe is inspired by the flavors of southern Italy, carried across generations, and served with pride. From the first loaf of warm bread to the last bite of tiramisu, we welcome you as neighbors and send you off as friends.</p>
+
+        <figure>
+          <img src="images/luigilombardi.jpg" alt="Chef Luigi sprinkling Parmigiano over fresh pasta." />
+        </figure>
       </section>
 
       <!-- GALLERY -->
@@ -73,6 +83,8 @@
 
       <!-- MENU PREVIEW (keep short for single-page) -->
       <section id="menu" class="menu" aria-labelledby="menu-title">
+
+      
         <h2 id="menu-title">Menu</h2>
 
         <div class="menu-group">
