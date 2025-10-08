@@ -178,11 +178,13 @@ body:has(.side-menu:checked) {
 
 #main {
   
-  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1200px;
  
 
 }
-#main h2, h3, ul, li, span, a {
+ #main h2, h3, a{
   text-align: center;
 }
 
@@ -225,7 +227,7 @@ body:has(.side-menu:checked) {
 }
 
 .sub-header a {
-  display: inline-block;
+ 
   border-bottom: 2px solid #e83100;
   padding: 2px 10px;
   border-radius: 5px;
@@ -269,12 +271,10 @@ body:has(.side-menu:checked) {
 
 }
 
+/* Menu Section */
 #menu {
-
- height: 100vh;
  margin: 0 0.6rem;
- padding: 1.5rem 1rem;
- border: 2px solid #e83100;
+ border: 2px solid #2d4628;
 
 }
 
@@ -282,29 +282,96 @@ body:has(.side-menu:checked) {
   color: #e83100;
   font-size: 2.5rem;
   padding-bottom: 10px;
+  letter-spacing: 5px;
 
 }
 
 .menu-list {
-  
+
   list-style: none;
-  padding: 30px 0;
+  padding: 30px  0;
 }
 
 .menu-list  li {
   font-size: 0.8rem;
-  padding-bottom: 10px
+  padding-bottom: 10px;
   
  
 }
-
 .menu-list span {
-  
+  padding: 0 2.5rem;
   letter-spacing: 1px;
-  padding-right: 20px;
+ 
+}
+
+.menu-list .price {
+  float: right;
+  font-weight: 700;
+  color: #e83100;
+ 
+}
+
+.menu-group {
+  border-top: 2px solid #2d4628;
+  padding: 20px 0;
+}
+
+.menu-group, .bnt-ghost {
+  text-align: center;
+}
+
+ .bnt-ghost  {
+  display: inline-block;
+  margin: 20px auto;
+  border-radius: 10px;
+  font-weight: 500;
+  border-bottom: 2px solid #e83100;
+  padding: 2px 10px;
+  transition: ease-in ;
   
 }
 
+.bnt-ghost:hover{
+
+  color: #f3f1e2;
+  background-color: #e83100;
+}
+
+/* Pizza Section */
+
+#pizza {
+
+ margin-top: 20px;
+  
+
+}
+
+#pizza-title {
+  color: #e83100;
+  font-size: 2rem;
+  padding: 10px;
+
+}
+
+.today {
+  background-color: #2d4628;
+  color: #f3f1e2;
+  padding: 10px;
+  text-align: center;
+  
+}
+.today h3 {
+  font-size: 1rem;
+
+  font-weight: lighter;
+}
+
+.today p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #dfb253;
+  letter-spacing: 5px;
+}
 
 
 
