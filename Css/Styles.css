@@ -180,7 +180,8 @@ body:has(.side-menu:checked) {
   
   margin: 0 auto;
   padding: 20px;
-  max-width: 1200px;
+
+  max-width: 800px;
  
 
 }
@@ -190,9 +191,9 @@ body:has(.side-menu:checked) {
 
 /* sub header */
 .sub-header {
-  
+ 
   text-align: center;
-  padding: 60px 20px;
+  padding: 5rem 0.6rem 3rem;
  
 }
 
@@ -205,17 +206,16 @@ body:has(.side-menu:checked) {
 
 .sub-header h1 {
   color:#2d4628;
-  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-size: clamp(1.7rem, 4vw, 3rem);
   margin: 5px 0;
   font-weight: 700;
   letter-spacing: 1.2px;
 }
 
 .sub-header h2 {
-  
   font-size: clamp(1rem, 2vw, 1.5rem);
   font-weight: 400;
-  letter-spacing: 3.5px;
+  letter-spacing: 2.8px;
 }
 
 .sub-header p {
@@ -243,14 +243,16 @@ body:has(.side-menu:checked) {
 
 
 #container {
-  padding: 20px;
+  padding: 20px 10px;
+
  
 }
 
 #about {
+
   margin-bottom: 10px;
   padding: 10px;
-  border-radius: 40px;
+
 }
 
  #about  h2 {
@@ -273,7 +275,7 @@ body:has(.side-menu:checked) {
 
 /* Menu Section */
 #menu {
- margin: 0 0.6rem;
+ margin: 6rem 0.6rem;
  border: 2px solid #2d4628;
 
 }
@@ -293,6 +295,7 @@ body:has(.side-menu:checked) {
 }
 
 .menu-list  li {
+  text-align: left;
   font-size: 0.8rem;
   padding-bottom: 10px;
   
@@ -353,6 +356,8 @@ body:has(.side-menu:checked) {
 
 }
 
+
+
 .today {
   background-color: #2d4628;
   color: #f3f1e2;
@@ -373,6 +378,50 @@ body:has(.side-menu:checked) {
   letter-spacing: 5px;
 }
 
+#reservation {
+  margin: 4rem 0;
+  padding: 10px;
+  text-align: center;
 
+}
+
+/* Reservation Section */
+
+#reservation figure {
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  padding: 10px 0;
+
+}
+
+#reservation h2 {
+  font-size: 2rem;
+  letter-spacing: 3.5px;
+}
+
+#reservation p {
+  font-size: 0.7rem;
+ 
+}
+
+#reservation a {
+  display: inline-block;
+  margin: 0 auto;
+  border-radius: 10px;
+  font-weight: 500;
+  border-bottom: 2px solid #e83100;
+  padding: 2px 10px;
+  transition: ease-in ;
+  
+}
+
+#reservation a:hover{
+
+  color: #f3f1e2;
+  background-color: #e83100;
+}
+
+/* Schedule Section */
 
 
