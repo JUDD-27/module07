@@ -32,10 +32,8 @@ Photo by <a href="https://unsplash.com/@arj\_sng?utm\_content=creditCopyText\&ut
 
 **Chef cooking**
 
-
-
-&nbsp;     Photo by <a href="https://unsplash.com/@benu?utm\_content=creditCopyText\&utm\_medium=referral\&utm\_source=unsplash">Benu Marinescu</a> on <a href="https://unsplash.com/photos/KPss7k-KLgc?utm\_content=creditCopyText\&utm\_medium=referral\&utm\_source=unsplash">Unsplash</a>
-
+Photo by <a href="https://unsplash.com/@benu?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Benu Marinescu</a> on <a href="https://unsplash.com/photos/KPss7k-KLgc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+      
 
 **Reservation**
 Photo by <a href="https://unsplash.com/@nahimaaparicio?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Nahima Aparicio</a> on <a href="https://unsplash.com/photos/a-table-set-for-a-formal-dinner-with-candles-and-place-settings-bayMprQ8aQQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>

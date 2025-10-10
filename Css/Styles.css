@@ -64,6 +64,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 
 body {
+
     font-family: 'Lora', serif;
     background-color: #f3f1e2;
     color: #2d4628;
@@ -181,7 +182,7 @@ body:has(.side-menu:checked) {
   margin: 0 auto;
   padding: 20px;
 
-  max-width: 800px;
+  max-width: 1700px;
  
 
 }
@@ -244,6 +245,8 @@ body:has(.side-menu:checked) {
 
 #container {
   padding: 20px 10px;
+  max-width: 1000px;
+  margin: 0 auto;
 
  
 }
@@ -275,7 +278,7 @@ body:has(.side-menu:checked) {
 
 /* Menu Section */
 #menu {
- margin: 6rem 0.6rem;
+ margin: 10rem 0.6rem;
  border: 2px solid #2d4628;
 
 }
@@ -378,14 +381,13 @@ body:has(.side-menu:checked) {
   letter-spacing: 5px;
 }
 
+/* Reservation Section */
 #reservation {
-  margin: 4rem 0;
+  margin: 5rem 0 10rem;
   padding: 10px;
   text-align: center;
 
 }
-
-/* Reservation Section */
 
 #reservation figure {
   margin: 0 auto;
@@ -425,3 +427,100 @@ body:has(.side-menu:checked) {
 /* Schedule Section */
 
 
+#contact {
+  margin: 4rem 0;
+  text-align: center;
+  border: #2d4628 2px solid;
+
+}
+
+#contact address{
+  
+  padding: 3rem 0 ;
+  font-size: 0.8rem;
+ 
+ 
+}
+
+#contact h2 {
+  color: #dfb253;
+  font-size: 2rem;
+  letter-spacing: 3.5px;
+  padding: 1rem 0;
+  background-color: #2d4628;
+}
+
+address p {
+  padding: 10px 0;
+  font-size: 0.8rem;
+  
+}
+
+#contact a{
+  display: block;
+  font-size: 0.8rem;
+  transition: ease-in ;
+  
+}
+
+#contact a:hover {
+  color: #e83100;
+  text-decoration: underline;
+}
+.hours h3 {
+  font-size: 1rem;
+  padding-bottom: 10px;
+ 
+}
+
+.open {
+  font-size: smaller;
+  padding-bottom: 3rem;
+}
+.closed {
+ 
+  padding-top: 5px;
+  font-size: 1.2rem;
+  border-top: #2d4628 2px solid;
+  color: #e83100;
+  font-weight: 700;
+ 
+}
+
+
+/* Footer Section */
+
+footer {
+  max-width: 1700px;
+  background-color: #2d4628;
+  color: #f3f1e2;
+  text-align: center;
+  font-size: 0.8rem;
+  margin: 0 auto;
+  width: 100%;
+}
+
+#luigis {
+
+  width: inherit;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+  display: block;
+}
+footer h3 {
+  font-size:2rem;
+  padding: 10px 0 5px;
+  color: #dfb253;
+  letter-spacing: 5px;
+} 
+footer p {
+  padding: 5px 30px 30px;
+  font-weight: 300;
+}
+
+.social a {
+  margin: 0 auto;
+  display: inline-block;
+  padding: 3rem;
+}
