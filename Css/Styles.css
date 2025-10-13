@@ -206,12 +206,16 @@ body:has(.side-menu:checked) {
 
 /* sub header */
 .sub-header {
-  width: 100%;
-  height: auto;
-  margin: 5rem auto ;
-  
+  margin: 5rem auto;
+
+ 
 }
+
 .sub-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
  background-image:
   linear-gradient(rgba(0, 0, 0, 0.35), rgba(44, 27, 6, 0.65)),
   url("../images/luigisKitchen.jpg");
@@ -219,10 +223,9 @@ body:has(.side-menu:checked) {
   background-position: center;
   text-align: center;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-  padding: 15rem 0.6rem 3rem;
   border-radius: 100px 100px 0 0; /* matches your .hero radius */
   color: #f3f1e2;
-  height: 70vh;
+  height: 50vh;
   
 }
 
@@ -344,7 +347,7 @@ body:has(.side-menu:checked) {
  
 }
 .menu-list span {
-  padding: 0 2.3rem;
+  padding: 0 2.1rem;
   letter-spacing: 1px;
  
 }
@@ -619,8 +622,8 @@ footer p {
     }
 
     .sub-header {
-      height: 80vh;
-      padding:  17rem 0 3rem;
+      height: 60vh;
+     
     }
     .sub-header h1 {
       font-size: clamp(3rem, 5vw, 4rem);
@@ -753,8 +756,8 @@ footer p {
   }
    
   .sub-header {
-    height: 80vh;
-    padding: 17rem 0 3rem;
+    height: 70vh;
+
   }
 
   .sub-header h1 {
@@ -787,7 +790,8 @@ footer p {
    
   .sub-header {
     height: 80vh;
-    padding: 17rem 0 3rem;
+ 
+   
   }
 
   .sub-header h1 {
