@@ -206,16 +206,17 @@ body:has(.side-menu:checked) {
   background-position: center;
   text-align: center;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-  padding: 10rem 0.6rem 5rem;
+  padding: 15rem 0.6rem 3rem;
   border-radius: 100px 100px 0 0; /* matches your .hero radius */
   color: #f3f1e2;
+  height: 70vh;
   
 }
 
 
 .sub-header h1 {
 
-  font-size: clamp(2.5rem, 4vw, 3rem);
+  font-size: clamp(2.3rem, 4vw, 3rem);
   margin: 1.2rem 0;
   font-weight: 700;
   letter-spacing: 1.2px;
@@ -604,6 +605,10 @@ footer p {
         display: none;
     }
 
+    .sub-header {
+      height: 80vh;
+      padding:  17rem 0 3rem;
+    }
     .sub-header h1 {
       font-size: clamp(3rem, 5vw, 4rem);
     }
@@ -636,7 +641,9 @@ footer p {
       grid-area: text;   justify-self: start; 
     }
     .about-media  { 
-    grid-area: image;  justify-self: end;   max-width: 520px; 
+    grid-area: image;  
+    justify-self: end;   
+    max-width: 520px; 
     }
     
     #about h2{
@@ -671,13 +678,19 @@ footer p {
       padding-top: 2rem;
     }
     #reservation {
-      padding: 8rem 4rem;
-      margin: 8rem auto;
+      height: 60vh;
+      padding: 10rem 2rem;
+    
     }
     #reservation h2 {
       font-size: 2.5rem;
       letter-spacing: 4px;
       
+    }
+
+    #reservation p {
+      font-size: 1.2rem;
+      padding-bottom: 3rem;
     }
     #contact {
      width: 75%;
@@ -718,26 +731,25 @@ footer p {
 }
 
 /* Large screens */
-@media (min-width: 1024px) and (max-with: 1440px) {
+@media (min-width: 1024px) and (max-width: 1440px) {
  
- #main {
-    max-width: 1440px;
-    margin: 0 auto;
-    
-  }
+
 
   #container {
     padding: 10rem 0;
   }
    
   .sub-header {
-    padding: 16rem 0 8rem;
+    height: 80vh;
+    padding: 17rem 0 3rem;
   }
 
   .sub-header h1 {
     font-size: clamp(4rem, 6vw, 5rem);
   } 
-
+  .sub-header p {
+    font-size: clamp(1.2rem, 2.5vw, 1.2rem);
+  }
 
   #about h2{
     font-size: 4rem; 
@@ -752,13 +764,39 @@ footer p {
     padding: 10rem 0;
     
   }
-  #reservation h2 {
-    font-size: 3rem;
-  }
-  #reservation p {
-    font-size: 1.2rem; 
-  }   
 
- 
+  
+}
+
+@media (min-width: 1441px) {
+  
+
+   
+  .sub-header {
+    height: 80vh;
+    padding: 17rem 0 3rem;
+  }
+
+  .sub-header h1 {
+    font-size: clamp(4rem, 6vw, 5rem);
+  } 
+  .sub-header p {
+    font-size: clamp(1.2rem, 2.5vw, 1.2rem);
+  }
+
+  #about h2{
+    font-size: 4rem; 
+    padding-bottom: 5rem;
+  }
+
+  #about p {
+    font-size: 1.2rem;
+  }
+
+  #reservation {
+    padding: 10rem 0;
+    
+  }
+
   
 }
